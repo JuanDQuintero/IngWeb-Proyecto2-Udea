@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.debug {
+    border: 1px solid red;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    height: auto;
+    width: 100vw;
+    font-family: 'Roboto', normal;
+    font-weight: 400;
+
+}
+
+main {
+    background: #EBEBEB;
+}
+
+/* Sección header*/
+
+header {
+    height: 100px;
+    background: #FFF159;
+}
+
+nav {
+    
+    padding-inline: 13rem;
+    padding-block: 0.7rem;
+    font-size: 13px;
+}
+
+nav * a{
+    text-decoration: none;
+    color: black;
+}
+
+.input-group > input::placeholder {
+    color: rgba(0, 0, 0, 0.25);    
+    font-size: 15px;
+    border-right: 1px solid #E6E6E6;
+}
+
+.input-group-append > button{
+    width: 30px;
+    border-left: 1px solid #E6E6E6;}
+
+.login {
+    padding-inline-end: 2rem;
+}
+
+
+.navbar-list{
+    color: rgba(51, 51, 51, 0.6);
+    padding-inline-end: 12rem;
+    gap: 1.2rem;
+} 
