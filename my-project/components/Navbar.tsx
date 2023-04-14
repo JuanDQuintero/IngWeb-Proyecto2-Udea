@@ -7,7 +7,7 @@ const Navbar = () => {
         <header>
             <nav>
                 <div  className="grid grid-cols-6 gap-4">
-                    <div className="logo ">
+                    <div className="grid">
                         <svg width="134" height="34" viewBox="0 0 134 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="134" height="34" fill="url(#pattern0)"/>
                             <defs>
