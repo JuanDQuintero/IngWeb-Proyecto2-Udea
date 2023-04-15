@@ -217,3 +217,34 @@ article {
 .envio > svg {
     margin-top: .3rem;
 }
+
+/* footer*/
+footer {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    background-color: #FFFFFF;
+    color: #999999;    
+}
+.fcont{
+    margin-left: 206px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.t1footer {
+    width: 744px;
+    color: #333333;
+    margin-bottom: 7px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+
+.debug {
+    border: 2px solid red;
+}
