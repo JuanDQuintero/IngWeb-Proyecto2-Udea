@@ -1,6 +1,6 @@
 import React from "react";
 
-function Sec_9() {
+function Sec9() {
     return (
         <section className="sec9">
             <div className="sec9_cont">
@@ -93,4 +93,4 @@ function Sec_9() {
     );
 }
 
-export default Sec_9;
+export default Sec9;
