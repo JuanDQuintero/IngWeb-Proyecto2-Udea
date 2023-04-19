@@ -1,6 +1,7 @@
 import Carrusel from '@components/Sections/Carrusel'
 import Novedades from '@components/Sections/Novedades'
 import Pagos from '@components/Sections/Pagos'
+import Suscripcion from '@components/Sections/Suscripcion'
 import React from 'react'
 
 export default function Sections() {
@@ -10,6 +11,7 @@ export default function Sections() {
         <article>
             <Pagos />
             <Carrusel />
+            <Suscripcion />
         </article>
         
     </div>

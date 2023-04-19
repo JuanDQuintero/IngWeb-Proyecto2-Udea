@@ -12,7 +12,6 @@
     box-sizing: border-box;
 }
 
-
 body {
     height: auto;
     font-family: 'Roboto', normal;
@@ -216,4 +215,111 @@ article {
 
 .envio > svg {
     margin-top: .3rem;
+}
+
+
+/* Sección Suscripción*/
+
+.suscripcion {
+    margin-top: 3.5rem;
+    background-color: #FFFFFF;
+    height: 340px;
+    border-radius: 6px;
+}
+
+.suscripcion-header > h2 {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.suscripcion-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFFFFF;
+    height: 87px;
+    padding-inline: 1.5rem;
+    border-radius: 6px 6px 0px 0px;
+    background: linear-gradient(90deg, #A90F90 55%, #0C1A51 100%);}
+
+.suscripcion-price {
+    display: flex;
+    flex-direction: column;
+    padding-left: .5rem;
+    border-left: 2px solid #FFFFFF;
+}
+
+.suscripcion-price > span:first-child {
+    text-align: left;
+    text-decoration-line: line-through;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+}
+.suscripcion-price > span:last-child {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 24px;
+}
+
+.span-mes {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 14px;
+}
+
+.suscripcion-container > p{
+    padding-left: 1.5rem;
+    font-size: 17px;
+    margin-bottom: 0;
+}
+
+.suscripcion-tipos {
+    display: flex;
+    padding-left: 1.5rem;
+    padding-right: 5rem;
+} 
+.suscripcion-tipos > p {
+    margin-bottom: 0;
+    font-size: 15px;
+    line-height: 16px;
+    padding-left: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    color: #000000;
+}
+
+.suscripcion-tipos > svg {
+    border-radius: 50%;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.08);
+}
+
+.suscripcion-tipos > img{
+    border-radius: 50%;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.08);
+}
+.suscripcion-tipos:nth-child(3){
+    width: 35%;
+}
+
+.suscripcion-button {
+    display: flex;
+    justify-content: end;
+    padding-block: 1rem;
+    padding-inline: 2rem;
+    border-top: 1px solid #EDEDED;
+    
+}
+
+.suscripcion-button > button {
+    background: #3483FA;
+    border-radius: 6px;
+    color: white;
+    border: none;
+    padding-inline: 24px;
+    padding-block: 13px;
+    cursor: pointer;
 }
