@@ -7,7 +7,7 @@ interface LayoutProps {
     children: JSX.Element;
 }
 
-const Layout = () => {
+const Layout = ({children}: LayoutProps) => {
     return (
         <main>
             <Navbar /> 
