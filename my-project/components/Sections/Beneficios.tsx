@@ -2,7 +2,7 @@ import React from "react";
 
 function Sec4() {
     return (
-        <section className="flex flex-col pt-10 pad">
+        <section className="flex flex-col pt-10 ">
             <div className="tsec4 ">
                 <span className="sp1sec4">Beneficios de Mercado Puntos</span>
                 <span className="sp2sec4">Ver todos los beneficios</span>

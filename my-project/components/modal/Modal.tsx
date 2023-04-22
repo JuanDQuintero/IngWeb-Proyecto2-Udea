@@ -13,7 +13,8 @@ function Modal({open,setOpen,nodalTitle,children}:ModalProps) {
   return (
     <Dialog open={open} onClose={()=>setOpen(false)} >
       <DialogTitle>{nodalTitle}</DialogTitle>
-      <DialogContent>{children}</DialogContent>
+      <DialogContent>{children}
+      </DialogContent>
     </Dialog>
   )
 }

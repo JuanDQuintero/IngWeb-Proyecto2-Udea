@@ -1,3 +1,4 @@
+import Card from '@components/Card';
 import React from 'react'
 import Slider from 'react-slick'
 
@@ -12,14 +13,7 @@ export default function Carrusel() {
       {
         breakpoint: 1024, // cambiar la configuración cuando el ancho de la pantalla sea menor o igual a 1024 píxeles
         settings: {
-          slidesToShow: 4,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 600, // cambiar la configuración cuando el ancho de la pantalla sea menor o igual a 600 píxeles
-        settings: {
-          slidesToShow: 1,
+          slidesToShow: 3,
           slidesToScroll: 1,
         },
       },
@@ -34,18 +28,21 @@ export default function Carrusel() {
           <a href="">Ver todas</a>
         </div>
         <Slider className='flex justify-between gap-4' {...settings}>
-            <div className="card">
-              <img src="/silla.png" alt="silla" />
-              <div className="card-precios">
-                <div className="precios">
-                  <span>$ 210.900</span>
-                  <span>32% OFF</span>
-                </div>
-                <div className="envio">
-                  <p>Envío gratis</p>
+            <Card>
+              <div className="card">
+                <img src="/silla.png" alt="silla" />
+                <div className="card-precios">
+                  <div className="precios">
+                    <span>$ 210.900</span>
+                    <span>32% OFF</span>
+                  </div>
+                  <div className="envio">
+                    <p>Envío gratis</p>
+                  </div>
                 </div>
               </div>
-            </div>
+            </Card>
+            
             <div className="card">
               <img src="/microfono.png" alt="microfono" />
               <div className="card-precios">
