@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Carrito from './Carrito';
 
-
+// pa juandi
 const Navbar = () => {
     return (
         <header>
