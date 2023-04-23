@@ -11,7 +11,7 @@ interface ModalProps {
 
 function Modal({open,setOpen,nodalTitle,children}:ModalProps) {
   return (
-    <Dialog className=' max-w-full' open={open} onClose={()=>setOpen(false)} >
+    <Dialog className='flex w-full justify-center' open={open} onClose={()=>setOpen(false)} >
       <DialogTitle>{nodalTitle}</DialogTitle>
       <DialogContent >{children}
       </DialogContent>

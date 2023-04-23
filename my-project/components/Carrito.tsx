@@ -8,9 +8,9 @@ export default function Carrito() {
   const { cartItems, removeItem } = useCarritoContext();
 
   const totalSum = cartItems
-    .reduce((total, item) => total + item.price, 0)
+    .reduce((total, item) => total + item.price * item.quantity, 0)
     .toFixed(2);
-  const quantityItems = cartItems.length;
+  const quantityItems = cartItems.reduce((total, item) => total + item.quantity, 0);
 
   console.log(cartItems);
   return (
@@ -40,19 +40,19 @@ export default function Carrito() {
             Productos añadidos al carrito:{' '}
             <span className='text-red-500'>{quantityItems} </span>
           </h2>
-          <div className='grid grid-cols-3 gap-3'>
+          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3'>
             {cartItems.length > 0 ? (
               cartItems.map((item) => (
                 <div key={item.id} className='border bg-slate-200 '>
-                  <h3 className='flex justify-center border'>{item.name}</h3>
+                  <h3 className='flex justify-center'>{item.name}</h3>
                   <img src={item.src} alt={item.alt} />
-                  <div className='flex justify-between'>
+                  <div className='flex justify-around'>
                     <div className='flex flex-col pl-2 pt-2'>
                       <p className='font-semibold '>
-                        Precio:{' '}
-                        <span className='text-green-600'>${item.price}</span>
+                        Precio:
+                        <span className='text-green-600 max-w-xs'>${item.price}</span>
                       </p>
-                      <span className='pr-4 '>Cantidad: {}</span>
+                      <span>Cantidad: {item.quantity}</span>
                     </div>
                     <div className='flex justify-end p-3'>
                       <button
@@ -66,9 +66,9 @@ export default function Carrito() {
                           stroke='currentColor'
                         >
                           <path
-                            stroke-linecap='round'
-                            stroke-linejoin='round'
-                            stroke-width='2'
+                            strokeLinecap='round'
+                            strokeLinejoin='round'
+                            strokeWidth='2'
                             d='M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16'
                           />
                         </svg>
@@ -81,7 +81,7 @@ export default function Carrito() {
               <p>Tu carrito está vacío</p>
             )}
           </div>
-          <p className='border-b-2 pt-4'>
+          <p className='flex justify-end border-b-2 pt-4 font-bold'>
             Total: <span className='text-green-600'>${totalSum}</span>
           </p>
         </div>

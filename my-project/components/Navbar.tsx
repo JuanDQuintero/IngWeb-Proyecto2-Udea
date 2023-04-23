@@ -59,9 +59,9 @@ const Navbar = () => {
                     xmlns='http://www.w3.org/2000/svg'
                   >
                     <path
-                      stroke-linecap='round'
-                      stroke-linejoin='round'
-                      stroke-width='2'
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      strokeWidth='2'
                       d='M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z'
                     ></path>
                   </svg>
@@ -92,7 +92,7 @@ const Navbar = () => {
                 <path
                   d='M4.54688 9.24265L3.48621 10.3033L4.54688 11.364L5.60754 10.3033L4.54688 9.24265ZM7.72886 3.93934L3.48621 8.18199L5.60754 10.3033L9.85018 6.06066L7.72886 3.93934ZM5.60754 8.18199L1.36489 3.93934L-0.756431 6.06066L3.48621 10.3033L5.60754 8.18199Z'
                   fill='black'
-                  fill-opacity='0.3'
+                  fillOpacity='0.3'
                   mask='url(#path-1-inside-1_1_16)'
                 />
               </svg>{' '}

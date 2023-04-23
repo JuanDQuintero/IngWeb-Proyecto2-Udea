@@ -22,7 +22,7 @@ function Sec3() {
                     <div className="cont5sec3">
                         <div className="cont6sec3">
                             <svg width="72" height="73" viewBox="0 0 72 73" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_1_213)">
+                                <g clipPath="url(#clip0_1_213)">
                                     <mask id="mask0_1_213" mask-type="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
                                         width="72" height="73">
                                         <path d="M72 0.6875H0V72.6875H72V0.6875Z" fill="white" />
@@ -44,14 +44,14 @@ function Sec3() {
                                     <radialGradient id="paint0_radial_1_213" cx="0" cy="0" r="1"
                                         gradientUnits="userSpaceOnUse"
                                         gradientTransform="translate(61.2 36.6875) rotate(180) scale(45 45)">
-                                        <stop stop-color="#01147B" />
-                                        <stop offset="0.025" stop-color="#011098" />
-                                        <stop offset="0.064" stop-color="#010ABD" />
-                                        <stop offset="0.103" stop-color="#0006DA" />
-                                        <stop offset="0.142" stop-color="#0003EE" />
-                                        <stop offset="0.179" stop-color="#0001FB" />
-                                        <stop offset="0.216" stop-color="#0000FF" />
-                                        <stop offset="1" stop-color="#00FFFF" stop-opacity="0" />
+                                        <stop stopColor="#01147B" />
+                                        <stop offset="0.025" stopColor="#011098" />
+                                        <stop offset="0.064" stopColor="#010ABD" />
+                                        <stop offset="0.103" stopColor="#0006DA" />
+                                        <stop offset="0.142" stopColor="#0003EE" />
+                                        <stop offset="0.179" stopColor="#0001FB" />
+                                        <stop offset="0.216" stopColor="#0000FF" />
+                                        <stop offset="1" stopColor="#00FFFF" stopOpacity="0" />
                                     </radialGradient>
                                     <clipPath id="clip0_1_213">
                                         <rect width="72" height="72" fill="white" transform="translate(0 0.6875)" />
@@ -62,7 +62,7 @@ function Sec3() {
                         </div>
                         <div className="cont6sec3">
                             <svg width="73" height="73" viewBox="0 0 73 73" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_1_226)">
+                                <g clipPath="url(#clip0_1_226)">
                                     <mask id="mask0_1_226" mask-type="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
                                         width="73" height="73">
                                         <path d="M72.3281 0.6875H0.328125V72.6875H72.3281V0.6875Z" fill="white" />
@@ -80,10 +80,10 @@ function Sec3() {
                                 <defs>
                                     <linearGradient id="paint0_linear_1_226" x1="25.0556" y1="46.4174" x2="41.2673"
                                         y2="29.9861" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#FA1660" />
-                                        <stop offset="0.28" stop-color="#FA1660" />
-                                        <stop offset="0.78" stop-color="#FF6E00" />
-                                        <stop offset="1" stop-color="#FF6E00" />
+                                        <stop stopColor="#FA1660" />
+                                        <stop offset="0.28" stopColor="#FA1660" />
+                                        <stop offset="0.78" stopColor="#FF6E00" />
+                                        <stop offset="1" stopColor="#FF6E00" />
                                     </linearGradient>
                                     <clipPath id="clip0_1_226">
                                         <rect width="72" height="72" fill="white" transform="translate(0.328125 0.6875)" />

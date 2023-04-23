@@ -7,7 +7,7 @@ import CarritoContextProvider  from '@context/CarritoContext';
 
 const Layout = () => {
     return (
-        <main>
+        <main >
             <CarritoContextProvider>
                 <div>
                     <Navbar /> 

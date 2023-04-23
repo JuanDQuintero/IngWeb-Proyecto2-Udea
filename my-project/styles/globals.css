@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+
 .debug {
     border: 1px solid red;
 }
@@ -23,6 +26,11 @@ main {
     background: #EBEBEB;
 }
 
+.title-section > a{
+    @apply text-sm font-normal text-gray-500 hover:text-gray-900;
+    color: #3483FA;
+}
+
 /* Sección header*/
 
 header {
@@ -31,11 +39,14 @@ header {
 }
 
 nav {
-    
-    padding-inline: 13rem;
-    padding-block: 0.7rem;
-    font-size: 13px;
+    @apply px-52 py-3 text-sm;
 }
+
+h2 {
+    @apply text-2xl font-normal py-4;
+    color: #666666;
+}
+
 
 
 
@@ -51,36 +62,25 @@ nav {
 
 
 .navbar-list{
+    @apply pr-48 gap-5;
     color: rgba(51, 51, 51, 0.6);
-    padding-inline-end: 12rem;
-    gap: 1.2rem;
 } 
 
 /*Sección novedades*/
 
 
 article {
-    padding-inline: 13rem;
+    @apply px-52;
 }
 
 /*Sección Pagos*/
 
-.pagos {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 90px;
-    margin-top: 2rem;
-    background: #FFFFFF;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-    
+section .pagos {
+    @apply flex justify-around items-center h-24 mt-8 py-4 bg-white shadow rounded;
 }
 
 .items-pagos {
-    display: flex;
-    align-items: center;
-    
+    @apply flex items-center gap-3;
 }
 
 .items-pagos:last-child {
@@ -152,12 +152,6 @@ article {
 .ofertas > h2 {
     padding-bottom: 1rem;
 }
-.list-cards {
-    display: flex;
-    flex-direction:row;   
-    justify-content: space-between;
-    width: 100%; 
-}
 
 .card {
     height: 350px;
@@ -166,20 +160,6 @@ article {
     border-radius: 4px;
 }
 
-
-.card-precios{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 1rem;
-    border-top: 1px solid rgba(51, 51, 51, 0.1);
-}
-
-.precios {
-    display: flex;
-    
-    align-items: center;
-}
 
 .precios > span:first-child {
     font-size: 23px;
@@ -343,8 +323,8 @@ footer {
 .divboton {
     height: 100px;
     display: flex;
-    align-items: end;
-    justify-content: end;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
 .btonsec3 {
@@ -613,10 +593,7 @@ footer {
     cursor: pointer;
 }
 
-.title-section > h2 > span{
-    font-weight: 600;
-    font-size: 26px;
-}
+
 
 
 /* Sección Colecciones */

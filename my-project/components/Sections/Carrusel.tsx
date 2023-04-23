@@ -31,6 +31,7 @@ export default function Carrusel() {
       price: 210.9,
       discount: '32% OFF',
       svg: '',
+      
     },
     {
       id: 2,
@@ -70,47 +71,47 @@ export default function Carrusel() {
     },
     {
       id: 6,
-      name: 'Silla',
-      src: '/silla.png',
-      alt: 'silla',
-      price: 210.9,
-      discount: '32% OFF',
+      name: 'Botiquin',
+      src: '/botiquin.webp',
+      alt: 'botiquin',
+      price: 99.9,
+      discount: '30% OFF',
       svg: '',
     },
     {
       id: 7,
-      name: 'Microfono',
-      src: '/microfono.png',
-      alt: 'microfono',
-      price: 74.99,
-      discount: '25% OFF',
+      name: 'Auriculares',
+      src: '/Auriculares.webp',
+      alt: 'Auriculares',
+      price: 20.5,
+      discount: '20% OFF',
       svg: '/Vector (2).svg',
     },
     {
       id: 8,
-      name: 'Afeitadora',
-      src: '/afeitadora.png',
-      alt: 'afeitadora',
-      price: 134.95,
+      name: 'Airfrier',
+      src: '/Airfrier.webp',
+      alt: 'Airfrier',
+      price: 200.95,
       discount: '50% OFF',
       svg: '',
     },
     {
       id: 9,
-      name: 'Armario',
-      src: '/armario.png',
-      alt: 'armario',
-      price: 149.9,
-      discount: '30% OFF',
+      name: 'Mouse',
+      src: '/Mouse.webp',
+      alt: 'Mouse',
+      price: 49.9,
+      discount: '10% OFF',
       svg: '',
     },
     {
       id: 10,
-      name: 'Cortina',
-      src: '/cortina.png',
-      alt: 'cortina',
-      price: 69.99,
-      discount: '17% OFF',
+      name: 'Camiseta',
+      src: '/Camiseta.webp',	
+      alt: 'Camiseta',
+      price: 20.99,
+      discount: '10% OFF',
       svg: '/Vector (2).svg',
     },
   ];
@@ -118,11 +119,11 @@ export default function Carrusel() {
   return (
     <div>
       <section className='oferta'>
-        <div className='title-section'>
+        <div className='title-section flex items-baseline gap-3'>
           <h2>Ofertas</h2>
           <a href=''>Ver todas</a>
         </div>
-        <Slider className='flex justify-between gap-4 ' {...settings}>
+        <Slider className='flex justify-between gap-6 ' {...settings}>
           {products.map((product) => (
             <Cards key={product.id} product={product} />
           ))}
