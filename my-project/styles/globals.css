@@ -12,6 +12,11 @@
     box-sizing: border-box;
 }
 
+.title-section > a{
+    @apply text-sm font-normal text-gray-500 hover:text-gray-900;
+    color: #3483FA;
+}
+
 body {
     height: auto;
     font-family: 'Roboto', normal;
@@ -23,6 +28,11 @@ main {
     background: #EBEBEB;
 }
 
+h2 {
+    @apply text-2xl font-normal py-5;
+    color: #666666;
+}
+
 /* Sección header*/
 
 header {
@@ -31,16 +41,9 @@ header {
 }
 
 nav {
-    
-    padding-inline: 13rem;
-    padding-block: 0.7rem;
-    font-size: 13px;
+    @apply px-52 py-3 text-sm;
 }
 
-nav * a{
-    text-decoration: none;
-    color: black;
-}
 
 .input-group > input::placeholder {
     color: rgba(0, 0, 0, 0.25);    
@@ -58,79 +61,25 @@ nav * a{
 
 
 .navbar-list{
+    @apply pr-48 gap-5;
     color: rgba(51, 51, 51, 0.6);
-    padding-inline-end: 12rem;
-    gap: 1.2rem;
 } 
 
 /*Sección novedades*/
 
 
 article {
-    padding-inline: 13rem;
+    @apply px-52;
 }
 
 /*Sección Pagos*/
 
 .pagos {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 90px;
-    margin-top: 2rem;
-    background: #FFFFFF;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-    
+     @apply flex justify-between items-center h-24 mt-8 bg-white shadow rounded pl-5;
 }
 
 .items-pagos {
-    display: flex;
-    align-items: center;
-    
-}
-
-.items-pagos:last-child {
-    border-left: 1px solid #EEEEEE;
-    height: 100%;
-    padding-left: 1rem;
-}
-
-
-
-.texto-pagos>p{
-    font-weight: 400;
-    font-size: 17px;
-    margin-bottom: 0;
-    
-}
-
-.texto-pagos > a {
-    
-    font-size: 13px;
-    color: #3483FA;
-    text-decoration: none;
-}
-
-
-/*Sección Pagos*/
-
-.pagos {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 90px;
-    margin-top: 2rem;
-    background: #FFFFFF;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-    
-}
-
-.items-pagos {
-    display: flex;
-    align-items: center;
-    
+    @apply flex items-center gap-4;
 }
 
 .items-pagos:last-child {
@@ -153,6 +102,7 @@ article {
     color: #3483FA;
     text-decoration: none;
 }
+
 
 /* Sección Ofertas*/
 
@@ -425,8 +375,8 @@ footer {
 .divboton {
     height: 100px;
     display: flex;
-    align-items: end;
-    justify-content: end;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
 .btonsec3 {
@@ -705,16 +655,7 @@ footer {
     
 }
 
-.title-section {
-    text-align: flex;
-    margin-bottom: 50px;
-}
 
-.title-section h2 {
-    font-size: 32px;
-    margin: 0;
-    padding: 0;
-}
 
 .title-section h2 span {
     color: #3483FA;
