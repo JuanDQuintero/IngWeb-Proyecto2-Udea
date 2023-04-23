@@ -754,6 +754,10 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .colecciones-list {
+        display: flex;
+        flex-direction: column;   
+    }
     .title-section h2 {
         font-size: 24px;
     }
@@ -764,8 +768,9 @@ footer {
 }
 
 @media (max-width: 320px) {
-    .title-section h2 {
-        
+    .colecciones-list {
+        display: flex;
+        flex-direction: column;   
     }
 }
 
