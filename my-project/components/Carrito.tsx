@@ -12,7 +12,6 @@ export default function Carrito() {
     .toFixed(2);
   const quantityItems = cartItems.reduce((total, item) => total + item.quantity, 0);
 
-  console.log(cartItems);
   return (
     <div>
       <button onClick={() => setOpenModal(true)} className='flex items-start'>

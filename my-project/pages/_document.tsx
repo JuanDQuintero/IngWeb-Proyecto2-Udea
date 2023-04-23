@@ -5,12 +5,10 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
-      <React.StrictMode>
       <body>
         <Main />
         <NextScript />
       </body>
-      </React.StrictMode>
     </Html>
   )
 }

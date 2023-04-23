@@ -1,19 +1,21 @@
+import { Rotate } from '@cloudinary/url-gen/actions';
 import Cards from '@components/Card';
 import React from 'react';
 import Slider from 'react-slick';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+
 export default function Carrusel() {
   const settings = {
-    dots: false, // muestra los puntos de navegación del carrusel
-    infinite: true, // permite la navegación infinita del carrusel
-    speed: 500, // velocidad de transición de la diapositiva en milisegundos
-    slidesToShow: 5, // cantidad de diapositivas a mostrar al mismo tiempo
-    slidesToScroll: 1, // cantidad de diapositivas que se desplazan con cada clic
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 1024, // cambiar la configuración cuando el ancho de la pantalla sea menor o igual a 1024 píxeles
+        breakpoint: 1024,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
@@ -22,7 +24,7 @@ export default function Carrusel() {
     ],
   };
 
-  const products = [
+ const products = [
     {
       id: 1,
       name: 'Silla',
@@ -31,7 +33,7 @@ export default function Carrusel() {
       price: 210.9,
       discount: '32% OFF',
       svg: '',
-      
+      quantity: 0,
     },
     {
       id: 2,
@@ -41,6 +43,7 @@ export default function Carrusel() {
       price: 74.99,
       discount: '25% OFF',
       svg: '/Vector (2).svg',
+      quantity: 0,
     },
     {
       id: 3,
@@ -50,6 +53,7 @@ export default function Carrusel() {
       price: 134.95,
       discount: '50% OFF',
       svg: '',
+      quantity: 0,
     },
     {
       id: 4,
@@ -59,6 +63,7 @@ export default function Carrusel() {
       price: 149.9,
       discount: '30% OFF',
       svg: '',
+      quantity: 0,
     },
     {
       id: 5,
@@ -68,6 +73,7 @@ export default function Carrusel() {
       price: 69.99,
       discount: '17% OFF',
       svg: '/Vector (2).svg',
+      quantity: 0,
     },
     {
       id: 6,
@@ -77,6 +83,7 @@ export default function Carrusel() {
       price: 99.9,
       discount: '30% OFF',
       svg: '',
+      quantity: 0,
     },
     {
       id: 7,
@@ -86,6 +93,7 @@ export default function Carrusel() {
       price: 20.5,
       discount: '20% OFF',
       svg: '/Vector (2).svg',
+      quantity: 0,
     },
     {
       id: 8,
@@ -95,6 +103,7 @@ export default function Carrusel() {
       price: 200.95,
       discount: '50% OFF',
       svg: '',
+      quantity: 0,
     },
     {
       id: 9,
@@ -104,6 +113,7 @@ export default function Carrusel() {
       price: 49.9,
       discount: '10% OFF',
       svg: '',
+      quantity: 0,
     },
     {
       id: 10,
@@ -113,8 +123,10 @@ export default function Carrusel() {
       price: 20.99,
       discount: '10% OFF',
       svg: '/Vector (2).svg',
+      quantity: 0,
     },
   ];
+  
 
   return (
     <div>
