@@ -11,9 +11,9 @@ interface ModalProps {
 
 function Modal({open,setOpen,nodalTitle,children}:ModalProps) {
   return (
-    <Dialog open={open} onClose={()=>setOpen(false)} >
+    <Dialog className=' max-w-full' open={open} onClose={()=>setOpen(false)} >
       <DialogTitle>{nodalTitle}</DialogTitle>
-      <DialogContent>{children}
+      <DialogContent >{children}
       </DialogContent>
     </Dialog>
   )

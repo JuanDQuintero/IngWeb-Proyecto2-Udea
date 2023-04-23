@@ -29,9 +29,9 @@ const Navbar = () => {
                         </div>
                     </form>
                 </div>            
-                <div className="flex justify-between pt-6 ">
-                    <div className="ubicacion pr-4">
-                        <a className='' href="">Ingresa tu domicilio</a>
+                <div className="flex justify-between py-4">
+                    <div className="hover:underline pr-3">
+                        <a className='pl-3' href="">Ingresa tu domicilio</a>
                     </div>
                     <div className="navbar-list flex pl-12">
                             <span className='flex' >Categorias 
@@ -53,7 +53,7 @@ const Navbar = () => {
                         <a className='hover:underline' href="">Ingresa </a>
                         <a className='hover:underline' href="">Mis compras </a>
                     </div>
-                    <div className=''>
+                    <div>
                         <Carrito />
                     </div>
                 </div>

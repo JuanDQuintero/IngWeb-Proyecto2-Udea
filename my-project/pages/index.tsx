@@ -1,4 +1,4 @@
-import { CarritoContextProvider } from '@context/carritoContext'
+import { CarritoContextProvider } from '@context/CarritoContext'
 import Layout from '@layouts/Layout'
 import Head from 'next/head'
 
@@ -14,10 +14,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-
-          <CarritoContextProvider>
-            <CarritoCompras />
-          </CarritoContextProvider>
+          
       </Layout>   
       </>
   )
