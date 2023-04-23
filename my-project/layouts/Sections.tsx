@@ -14,7 +14,6 @@ export default function Sections() {
   return (
     <div>
         <Novedades />
-        
         <article>
             <Pagos />
             <Carrusel />

@@ -1,14 +1,21 @@
-import { Dispatch, SetStateAction, createContext, useContext, useState } from "react";
+import {
+  Dispatch,
+  SetStateAction,
+  createContext,
+  useContext,
+  useState,
+} from 'react';
+
+import { toast } from 'react-toastify';
 
 interface CartItem {
-  id: number,
-  name: string,
-  price: number,
-  src: string,
-  alt: string,
-  discount: string,
-  svg: string,
-
+  id: number;
+  name: string;
+  price: number;
+  src: string;
+  alt: string;
+  discount: string;
+  svg: string;
 }
 
 interface CarritoContextProps {
@@ -26,20 +33,21 @@ const CarritoContext = createContext<CarritoContextProps>({
 export const useCarritoContext = () => useContext(CarritoContext);
 
 interface CarritoContextProviderProps {
-    children: JSX.Element;
+  children: JSX.Element;
 }
 
-const CarritoContextProvider = ({children}:CarritoContextProviderProps) => {
+const CarritoContextProvider = ({ children }: CarritoContextProviderProps) => {
   const [cartItems, setCartItems] = useState<CartItem[]>([]);
   const removeItem = (itemId: number) => {
-    const updatedCart = cartItems.filter(item => item.id !== itemId);
+    const updatedCart = cartItems.filter((item) => item.id !== itemId);
     setCartItems(updatedCart);
-  }
+    toast.info('Producto eliminado del carrito');
+  };
   return (
     <CarritoContext.Provider value={{ cartItems, setCartItems, removeItem }}>
       {children}
     </CarritoContext.Provider>
-  );   
-}
+  );
+};
 
-export default CarritoContextProvider ;
+export default CarritoContextProvider;
