@@ -24,6 +24,10 @@ body {
 
 }
 
+article {
+    @apply px-52;
+}
+
 main {
     background: #EBEBEB;
 }
@@ -71,8 +75,11 @@ nav {
 /*Sección Pagos*/
 
 .pagos {
-     @apply flex justify-between items-center h-24 mt-8 bg-white shadow rounded pl-5;
-}
+     @apply flex justify-evenly items-center  h-max bg-white shadow rounded ;
+     width: auto;
+
+    }
+
 
 .items-pagos {
     @apply flex items-center gap-4;
@@ -86,6 +93,7 @@ nav {
 
 
 .texto-pagos>p{
+    width: max-content;
     font-weight: 400;
     font-size: 17px;
     margin-bottom: 0;
@@ -99,6 +107,16 @@ nav {
     text-decoration: none;
 }
 
+@media (min-width: 320px) and (max-width: 850px) {
+    .pagos{
+        flex-direction: column;
+        align-items: baseline;
+        height: min-content;
+    }
+    .items-pagos:last-child{
+        padding-left: 0px;
+    }
+}
 
 /* Sección Ofertas*/
 
