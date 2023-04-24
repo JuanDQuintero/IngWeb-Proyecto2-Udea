@@ -1,15 +1,21 @@
 import Navbar from '@components/Navbar';
 import React from 'react';
+import Sections from './Sections';
+import Footer from '@components/Footer';
+import CarritoContextProvider  from '@context/CarritoContext';
 
-interface LayoutProps {
-    children: JSX.Element;
-}
 
-const Layout = ({ children }: LayoutProps) => {
+const Layout = () => {
     return (
-        <main>
-            <Navbar />
-            <section>{children}</section>
+        <main className='overflow-auto max-w-screen-md'>
+            <CarritoContextProvider>
+                <div>
+                    <Navbar /> 
+                    <Sections />
+                    <Footer />
+                </div>
+            </CarritoContextProvider>
+
         </main>
     );
 }
