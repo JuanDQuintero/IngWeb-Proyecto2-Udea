@@ -1,8 +1,9 @@
 import React from 'react';
 import Carrito from './Carrito';
 
-const Navbar = () => {
-  return (
+
+
+const Navbar = () => (
     <header>
       <nav>
         <div className='grid grid-cols-6 gap-4'>
@@ -72,7 +73,7 @@ const Navbar = () => {
         </div>
         <div className='flex justify-between py-4 '>
           <div>
-            <a className='pl-3 hover:underline' href=''>
+            <a className='pl-3 hover:underline' href='/domicilio'>
               Ingresa tu domicilio
             </a>
           </div>
@@ -114,13 +115,13 @@ const Navbar = () => {
             </select>
           </div>
           <div className='flex gap-2'>
-            <a className='hidden lg:block hover:underline' href=''>
+            <a className='hidden lg:block hover:underline' href='/cuenta'>
               Crea tu cuenta{' '}
             </a>
-            <a className='hidden lg:block hover:underline' href=''>
+            <a className='hidden lg:block hover:underline' href='/ingresa'>
               Ingresa{' '}
             </a>
-            <a className='hidden lg:block hover:underline' href=''>
+            <a className='hidden lg:block hover:underline' href='/compras'>
               Mis compras{' '}
             </a>
             <select className="block lg:hidden">
@@ -135,7 +136,6 @@ const Navbar = () => {
         </div>
       </nav>
     </header>
-  );
-};
+)
 
 export default Navbar;

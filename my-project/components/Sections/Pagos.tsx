@@ -1,7 +1,6 @@
 import React from 'react';
 
-export default function Pagos() {
-  return (
+const  Pagos = () => (
     <div>
       <section>
         <div className='pagos'>
@@ -74,7 +73,7 @@ export default function Pagos() {
             </svg>
             <div className='texto-pagos'>
               <p>Hasta 48 cuotas</p>
-              <a href=''>Ver más</a>
+              <a href='/Cuaota'>Ver más</a>
             </div>
           </div>
           <div className='items-pagos flex flex-grow w-full lg:w-1/3'>
@@ -148,7 +147,7 @@ export default function Pagos() {
             </svg>
             <div className='texto-pagos lg:w-max'>
               <p>Transferencias desde tu banco</p>
-              <a href=''>Ver más</a>
+              <a href='/Banco'>Ver más</a>
             </div>
           </div>
           <div className='items-pagos flex flex-grow w-full  lg:w-1/3'>
@@ -212,7 +211,7 @@ export default function Pagos() {
             </svg>
             <div className='texto-pagos'>
               <p>Paga en efectivo</p>
-              <a href=''>Ver más</a>
+              <a href='/Efectivo'>Ver más</a>
             </div>
           </div>
           <div className='items-pagos flex flex-grow w-full  lg:w-1/3'>
@@ -253,11 +252,12 @@ export default function Pagos() {
             </svg>
             <div className='texto-pagos lg:w-max'>
               <p>Más medios de pago</p>
-              <a href=''>Ver todos</a>
+              <a href='/Medios'>Ver todos</a>
             </div>
           </div>
         </div>
       </section>
     </div>
-  );
-}
+)
+
+export default Pagos;

@@ -1,8 +1,6 @@
 import React from 'react'
 
-export default function Sec7() {
-    return (
-
+const Sec7 = () => (
         <section className="colecciones">
             <div className="title-section">
                 <h2>Colecciones: <span>Supermercado</span> <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -12,24 +10,24 @@ export default function Sec7() {
             </div>
             <div className="colecciones-list">
                 <div>
-                    <a href=""><img src="/supemercado.png" alt="supemercado" width="710px" height="710px"></img></a>
+                    <a href="/mercado"><img src="/supemercado.png" alt="supemercado" width="710px" height="710px"></img></a>
                 </div>
                 <div className="items-colecciones">
-                    <a href=""><img src="/perfume.png" alt="perfume" width="164px" height="164px"></img></a>
-                    <a href=""><img src="/jabon.png" alt="jabon" width="164px" height="164px"></img></a>
-                    <a href=""><img src="/nivea.png" alt="nivea" width="164px" height="164px"></img></a>
-                    <a href=""><img src="/cicatricure.png" alt="cicatricure" width="164px" height="164px"></img></a>
-                    <a href=""><img src="/nissin.png" alt="nissin" width="164px" height="164px"></img></a>
-                    <a href=""><img src="/licor.png" alt="licor" width="164px" height="164px"></img></a>
-                    <a href=""><img src="/crema.png" alt="crema" width="164px" height="164px"></img></a>
-                    <a href=""><img src="/shampoo.png" alt="shampoo" width="164px" height="164px"></img></a>
+                    <a href="/perfume"><img src="/perfume.png" alt="perfume" width="164px" height="164px"></img></a>
+                    <a href="/jabon"><img src="/jabon.png" alt="jabon" width="164px" height="164px"></img></a>
+                    <a href="/nivea"><img src="/nivea.png" alt="nivea" width="164px" height="164px"></img></a>
+                    <a href="/cicatricure"><img src="/cicatricure.png" alt="cicatricure" width="164px" height="164px"></img></a>
+                    <a href="/nissin"><img src="/nissin.png" alt="nissin" width="164px" height="164px"></img></a>
+                    <a href="/licor"><img src="/licor.png" alt="licor" width="164px" height="164px"></img></a>
+                    <a href="/crema"><img src="/crema.png" alt="crema" width="164px" height="164px"></img></a>
+                    <a href="/shampoo"><img src="/shampoo.png" alt="shampoo" width="164px" height="164px"></img></a>
 
                 </div>
             </div>
         </section>
+)
 
-    );
 
-}
+export default Sec7;
 
 

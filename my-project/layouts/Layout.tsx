@@ -5,8 +5,7 @@ import Footer from '@components/Footer';
 import CarritoContextProvider  from '@context/CarritoContext';
 
 
-const Layout = () => {
-    return (
+const Layout = () => (
         <main className='overflow-auto max-w-screen-md'>
             <CarritoContextProvider>
                 <div>
@@ -17,7 +16,7 @@ const Layout = () => {
             </CarritoContextProvider>
 
         </main>
-    );
-}
+)
+
 
 export default Layout;

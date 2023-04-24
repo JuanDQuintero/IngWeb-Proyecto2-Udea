@@ -1,7 +1,6 @@
 import React from "react";
 
-function Sec4() {
-    return (
+const  Sec4 =() => (
         <section className="flex flex-col pt-10 ">
             <div className="tsec4 ">
                 <span className="sp1sec4">Beneficios de Mercado Puntos</span>
@@ -40,6 +39,5 @@ function Sec4() {
                 </div>
             </div>
         </section>
-    );
-}
+)
 export default Sec4;

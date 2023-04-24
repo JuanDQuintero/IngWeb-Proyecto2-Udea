@@ -9,14 +9,12 @@ interface ModalProps {
   children: JSX.Element;
 }
 
-function Modal({open,setOpen,nodalTitle,children}:ModalProps) {
-  return (
+const Modal = ({open,setOpen,nodalTitle,children}:ModalProps) => (
     <Dialog className='flex w-full justify-center' open={open} onClose={()=>setOpen(false)} >
       <DialogTitle>{nodalTitle}</DialogTitle>
       <DialogContent >{children}
       </DialogContent>
     </Dialog>
-  )
-}
+)
 
 export default Modal

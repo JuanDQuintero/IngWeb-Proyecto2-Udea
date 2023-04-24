@@ -1,4 +1,3 @@
-import React, { useContext, useEffect, useState } from 'react';
 import { useCarritoContext } from '@context/CarritoContext';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -16,7 +15,7 @@ interface CardItemProps {
   };
 }
 
-export default function Cards({ product }: CardItemProps) {
+const Cards = ({ product }: CardItemProps) => {
   const { cartItems, setCartItems } = useCarritoContext();
 
   const handleAddToCar = () => {
@@ -52,3 +51,5 @@ export default function Cards({ product }: CardItemProps) {
     </div>
   );
 }
+
+export default Cards;

@@ -1,7 +1,6 @@
 import React from "react";
 
-function Sec9() {
-    return (
+const Sec9 = () => (
         <section className="sec9">
             <div className="sec9_cont">
                 <div className="dsec9">
@@ -90,7 +89,6 @@ function Sec9() {
 
         </section>
 
-    );
-}
+)
 
 export default Sec9;

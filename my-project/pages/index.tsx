@@ -1,9 +1,7 @@
-import { CarritoContextProvider } from '@context/CarritoContext'
 import Layout from '@layouts/Layout'
 import Head from 'next/head'
 
-export default function Home() {
-  return (
+const Home = () => (
     <>
       <Head>
         <title>Create Next App</title>
@@ -15,7 +13,7 @@ export default function Home() {
     </>
   )
   
-}
+  export default Home
 
 
 

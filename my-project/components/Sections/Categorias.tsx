@@ -1,7 +1,6 @@
 import React from 'react'
 
-export default function Sec8() {
-    return (
+const  Sec8 = () => (
         <section className="categorias">
             <div className="title-section">
                 <h2>Categorías populares </h2>
@@ -251,11 +250,9 @@ export default function Sec8() {
                     <p>Herramientas</p>
                 </div>
 
-
-
             </div>
         </section>
 
+)
 
-    );
-}
+export default Sec8;

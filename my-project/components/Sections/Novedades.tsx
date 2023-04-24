@@ -1,7 +1,6 @@
 import React from 'react'
 
-export default function Novedades() {
-  return (
+const Novedades = () => (
     <div>
         <section className="novedades">
             
@@ -9,5 +8,6 @@ export default function Novedades() {
             
         </section>
     </div>
-  )
-}
+)
+
+export default Novedades;

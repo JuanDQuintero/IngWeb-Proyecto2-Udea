@@ -1,7 +1,6 @@
 import React from "react";
 
-function Sec5() {
-    return (
+const Sec5 = () => (
         <section className="flex flex-col w-full bg-white">
             <span className="tpsec5">Descubre</span>
             <div className="flex flex-row imagenlist" >
@@ -23,6 +22,5 @@ function Sec5() {
                 </div>
             </div>
         </section>
-    );
-}
+)
 export default Sec5;

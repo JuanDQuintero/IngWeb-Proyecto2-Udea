@@ -1,7 +1,6 @@
 import React from "react";
 
-function Sec3() {
-    return (
+const Sec3 = () => (
         <div className="flex flex-col sec3">
             <div className="bg-white">
                 <div className="cont1sec3">
@@ -106,6 +105,5 @@ function Sec3() {
             </div>
 
         </div>
-    );
-}
+)
 export default Sec3;

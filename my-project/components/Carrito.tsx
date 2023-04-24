@@ -1,9 +1,8 @@
-import React, { useContext, useState } from 'react';
+import React, {  useState } from 'react';
 import Modal from '@components/modal/Modal';
 import { useCarritoContext } from '@context/CarritoContext';
-import { ToastContainer } from 'react-toastify';
 
-export default function Carrito() {
+const Carrito = () => {
   const [openModal, setOpenModal] = useState(false);
   const { cartItems, removeItem } = useCarritoContext();
 
@@ -88,3 +87,5 @@ export default function Carrito() {
     </div>
   );
 }
+
+export default Carrito;

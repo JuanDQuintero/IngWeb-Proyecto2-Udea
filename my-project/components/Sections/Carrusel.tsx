@@ -1,4 +1,3 @@
-import { Rotate } from '@cloudinary/url-gen/actions';
 import Cards from '@components/Card';
 import React from 'react';
 import Slider from 'react-slick';
@@ -6,7 +5,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
-export default function Carrusel() {
+const Carrusel = ()  => {
   const settings = {
     dots: false,
     infinite: true,
@@ -133,7 +132,7 @@ export default function Carrusel() {
       <section className='oferta'>
         <div className='title-section flex items-baseline gap-3'>
           <h2>Ofertas</h2>
-          <a href=''>Ver todas</a>
+          <a href='/Ofertas'>Ver todas</a>
         </div>
         <Slider className='flex justify-between gap-6 ' {...settings}>
           {products.map((product) => (
@@ -156,3 +155,6 @@ export default function Carrusel() {
     </div>
   );
 }
+
+
+export default Carrusel;

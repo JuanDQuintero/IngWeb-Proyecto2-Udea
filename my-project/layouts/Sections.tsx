@@ -10,8 +10,7 @@ import Sec8 from '@components/Sections/Categorias'
 import Sec9 from '@components/Sections/ExtFooter'
 import React from 'react'
 
-export default function Sections() {
-  return (
+const Sections = () => (
     <div>
         <Novedades />
         <article >
@@ -26,5 +25,7 @@ export default function Sections() {
         </article>
         <Sec9 />
     </div>
-  )
-}
+  
+)
+
+export default Sections;
