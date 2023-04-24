@@ -3,9 +3,8 @@ import React from 'react';
 export default function Pagos() {
   return (
     <div>
-      <section className='pagos flex wrap '>
-       
-        <div className='pagos flex wrap'>
+      <section>
+        <div className='pagos'>
           <div className='items-pagos flex flex-grow w-full lg:w-1/3 '>
             <svg
               width='48'
@@ -152,9 +151,6 @@ export default function Pagos() {
               <a href=''>Ver más</a>
             </div>
           </div>
-        </div>
-
-        <div className='pagos flex wrap'>
           <div className='items-pagos flex flex-grow w-full  lg:w-1/3'>
             <svg
               width='49'

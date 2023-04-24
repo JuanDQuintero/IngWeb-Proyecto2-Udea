@@ -70,7 +70,7 @@ const Navbar = () => {
             </div>
           </form>
         </div>
-        <div className='flex justify-between py-4'>
+        <div className='flex justify-between py-4 '>
           <div>
             <a className='pl-3 hover:underline' href=''>
               Ingresa tu domicilio
@@ -97,23 +97,37 @@ const Navbar = () => {
                 />
               </svg>{' '}
             </span>
-            <span>Ofertas</span>
-            <span>Historial</span>
-            <span>Supermercado</span>
-            <span>Moda</span>
-            <span>Vender</span>
-            <span>Ayuda / PQR</span>
+            <span className='hidden lg:block'>Ofertas</span>
+            <span className='hidden lg:block'>Historial</span>
+            <span className='hidden lg:block'>Supermercado</span>
+            <span className='hidden lg:block'>Moda</span>
+            <span className='hidden lg:block'>Vender</span>
+            <span className='hidden lg:block'>Ayuda / PQR</span>
+            <select className="block lg:hidden">
+              <option value="1">Ofertas</option>
+              <option value="2">Historial</option>
+              <option value="3">Supermercado</option>
+              <option value="4">Moda</option>
+              <option value="5">Vender</option>
+              <option value="6">Ayuda / PQR</option>
+
+            </select>
           </div>
           <div className='flex gap-2'>
-            <a className='hover:underline' href=''>
+            <a className='hidden lg:block hover:underline' href=''>
               Crea tu cuenta{' '}
             </a>
-            <a className='hover:underline' href=''>
+            <a className='hidden lg:block hover:underline' href=''>
               Ingresa{' '}
             </a>
-            <a className='hover:underline' href=''>
+            <a className='hidden lg:block hover:underline' href=''>
               Mis compras{' '}
             </a>
+            <select className="block lg:hidden">
+              <option value="1">Crea tu cuenta</option>
+              <option value="2">Ingresa</option>
+              <option value="3">Mis compras</option>
+            </select>
           </div>
           <div>
             <Carrito />

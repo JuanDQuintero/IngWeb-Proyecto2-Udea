@@ -14,7 +14,7 @@ export default function Sections() {
   return (
     <div>
         <Novedades />
-        <article>
+        <article >
             <Pagos />
             <Carrusel />
             <Sec3 />
