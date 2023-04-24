@@ -2,9 +2,9 @@ import React from "react";
 
 function Sec5() {
     return (
-        <section className="flex flex-col bg-white">
+        <section className="flex flex-col w-full bg-white">
             <span className="tpsec5">Descubre</span>
-            <div className="flex flex-row">
+            <div className="flex flex-row imagenlist" >
                 <div className="flex flex-row element-1">
                     <div className=" conxsec5">
                         <span className="t1sec5">RENUEVA TUS ESPACIOS</span>
