@@ -3,10 +3,10 @@ import React from 'react';
 export default function Pagos() {
   return (
     <div>
-      <section className='pagos flex wrap'>
+      <section className='pagos flex wrap '>
        
         <div className='pagos flex wrap'>
-          <div className='items-pagos flex flex-grow w-full md:w-1/2 lg:w-1/3 '>
+          <div className='items-pagos flex flex-grow w-full lg:w-1/3 '>
             <svg
               width='48'
               height='49'
@@ -78,7 +78,7 @@ export default function Pagos() {
               <a href=''>Ver más</a>
             </div>
           </div>
-          <div className='items-pagos flex flex-grow w-full md:w-1/2 lg:w-1/3'>
+          <div className='items-pagos flex flex-grow w-full lg:w-1/3'>
             <svg
               width='49'
               height='49'
@@ -147,7 +147,7 @@ export default function Pagos() {
                 </clipPath>
               </defs>
             </svg>
-            <div className='texto-pagos'>
+            <div className='texto-pagos lg:w-max'>
               <p>Transferencias desde tu banco</p>
               <a href=''>Ver más</a>
             </div>
@@ -155,7 +155,7 @@ export default function Pagos() {
         </div>
 
         <div className='pagos flex wrap'>
-          <div className='items-pagos flex flex-grow w-full md:w-1/2 lg:w-1/3'>
+          <div className='items-pagos flex flex-grow w-full  lg:w-1/3'>
             <svg
               width='49'
               height='49'
@@ -219,7 +219,7 @@ export default function Pagos() {
               <a href=''>Ver más</a>
             </div>
           </div>
-          <div className='items-pagos flex flex-grow w-full md:w-1/2 lg:w-1/3'>
+          <div className='items-pagos flex flex-grow w-full  lg:w-1/3'>
             <svg
               width='49'
               height='49'
@@ -255,7 +255,7 @@ export default function Pagos() {
                 </clipPath>
               </defs>
             </svg>
-            <div className='texto-pagos'>
+            <div className='texto-pagos lg:w-max'>
               <p>Más medios de pago</p>
               <a href=''>Ver todos</a>
             </div>

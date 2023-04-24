@@ -76,7 +76,7 @@ nav {
 
 .pagos {
      @apply flex justify-evenly items-center  h-max bg-white shadow rounded ;
-     width: auto;
+       
 
     }
 
@@ -93,11 +93,10 @@ nav {
 
 
 .texto-pagos>p{
-    width: max-content;
+    
     font-weight: 400;
     font-size: 17px;
     margin-bottom: 0;
-    
 }
 
 .texto-pagos > a {
@@ -112,10 +111,15 @@ nav {
         flex-direction: column;
         align-items: baseline;
         height: min-content;
+        width: min-content;
+    }
+    .items-pagos {
+        height: min-content;
     }
     .items-pagos:last-child{
         padding-left: 0px;
     }
+
 }
 
 /* Sección Ofertas*/
