@@ -68,10 +68,6 @@ nav {
 /*Sección novedades*/
 
 
-article {
-    @apply px-52;
-}
-
 /*Sección Pagos*/
 
 .pagos {
@@ -401,7 +397,22 @@ footer {
     color: #FFFFFF;
     margin-left: 24px;
 }
-
+/* Media queries para tamaños de pantalla entre 320px y 1024px */
+@media (min-width: 320px) and (max-width: 960px) {
+    .cont5sec3{
+        flex-direction: column;
+        align-items: start;
+    }
+}
+/* Media queries para tamaños de pantalla entre 320px y 1024px */
+@media (min-width: 320px) and (max-width: 700px) {
+    .cont1sec3{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        height: min-content;
+    }
+}
 /* secction 4*/
 .pad{
     padding-bottom: 90px;
